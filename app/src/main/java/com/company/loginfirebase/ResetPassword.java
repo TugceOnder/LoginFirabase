@@ -34,8 +34,8 @@ public class ResetPassword extends AppCompatActivity {
         mForgetPaword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent(getApplicationContext(),ResetPassword.class));
+              //  FirebaseAuth.getInstance().signOut();
+             //   startActivity(new Intent(getApplicationContext(),ResetPassword.class));
                  EditText resetMail = new EditText(v.getContext());
                 AlertDialog.Builder passwordResetDialog = new AlertDialog.Builder(v.getContext());
                 passwordResetDialog.setTitle("Reset Password ? ");
